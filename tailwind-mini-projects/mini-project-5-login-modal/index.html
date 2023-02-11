@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Rokkitt:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ["Mulish", "sans-serif"],
+            mono: ["Rokkitt", "monospace"],
+          },
+        },
+      };
+    </script>
+    <title>Login Modal</title>
+  </head>
+  <body>
+    <!-- Global Container -->
+    <div class="flex min-h-screen items-center justify-center bg-rose-50">
+      <!-- Card Container -->
+      <div
+        class="relative m-6 flex flex-col space-y-10 rounded-2xl bg-white shadow-2xl md:m-0 md:flex-row md:space-y-0"
+      >
+        <!-- Left side -->
+        <div class="p-6 md:p-20">
+          <!-- Top content -->
+          <h2 class="mb-5 font-mono text-4xl font-bold">Log In</h2>
+          <p class="mb-12 max-w-sm font-sans font-light text-gray-600">
+            Log in to your account to upload or download pictures, videos, or
+            music
+          </p>
+          <input
+            type="text"
+            class="w-full rounded-md border border-gray-300 p-6 placeholder:font-sans placeholder:font-light"
+            placeholder="Enter your email address"
+          />
+          <!-- Middle content -->
+          <div
+            class="mt-6 flex flex-col items-center justify-between space-y-6 md:flex-row md:space-y-0"
+          >
+            <div class="font-thin text-cyan-700">Forgot password</div>
+            <button
+              class="flex w-full items-center justify-center space-x-4 rounded-md bg-cyan-700 p-6 px-9 font-sans font-bold text-white shadow-sm shadow-cyan-100 transition duration-150 hover:-translate-y-0.5 hover:bg-opacity-90 hover:shadow-lg md:w-auto"
+            >
+              <span>Next</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-7"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <line x1="13" y1="18" x2="19" y2="12" />
+                <line x1="13" y1="6" x2="19" y2="12" />
+              </svg>
+            </button>
+          </div>
+          <!-- Border -->
+          <div class="mt-12 border-b border-b-gray-300"></div>
+          <!-- Bottom Content -->
+          <p class="py-6 text-center text-sm font-thin text-gray-400">
+            or log in with
+          </p>
+          <!-- Bottom Buttons Container -->
+          <div
+            class="flex flex-col space-x-0 space-y-6 md:flex-row md:space-x-4 md:space-y-0"
+          >
+            <button
+              class="flex items-center justify-center space-x-3 rounded border border-gray-300 py-2 shadow-sm transition duration-150 hover:-translate-y-0.5 hover:bg-opacity-30 hover:shadow-lg md:w-1/2"
+            >
+              <img
+                src="/all-project-assets/login-modal/images/facebook.png"
+                alt=""
+                class="w-9"
+              />
+              <span class="font-thin">Facebook</span>
+            </button>
+            <button
+              class="flex items-center justify-center space-x-3 rounded border border-gray-300 py-2 shadow-sm transition duration-150 hover:-translate-y-0.5 hover:bg-opacity-30 hover:shadow-lg md:w-1/2"
+            >
+              <img
+                src="/all-project-assets/login-modal/images/google.png"
+                alt=""
+                class="w-9"
+              />
+              <span class="font-thin">Google</span>
+            </button>
+          </div>
+        </div>
+        <!-- Right Side -->
+        <img
+          src="/all-project-assets/login-modal/images/image.jpg"
+          alt=""
+          class="hidden w-[430px] md:block"
+        />
+        <!-- Close button -->
+        <div
+          class="group absolute -top-5 right-4 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-200 transition duration-150 hover:translate-y-0.5 md:top-4 md:bg-white"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-black group-hover:text-gray-600"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

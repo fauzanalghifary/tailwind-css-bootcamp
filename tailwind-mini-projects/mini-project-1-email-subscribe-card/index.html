@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Simple Tailwind Starter</title>
+  </head>
+  <body>
+    <!-- Background Contain er -->
+    <div class="flex h-screen items-center justify-center bg-zinc-700">
+      <!-- Card -->
+      <div class="mx-6 rounded-2xl bg-zinc-800 p-2">
+        <!-- Flex Container -->
+        <div class="flex flex-col rounded-l-xl md:flex-row">
+          <!-- Image -->
+          <img
+            src="/all-project-assets/email-subscribe/images/image.jpg"
+            alt=""
+            class="h-80 transform rounded-xl object-cover duration-200 hover:scale-105 hover:rounded-xl md:h-64 md:rounded-l-xl md:rounded-r-none"
+          />
+          <!-- Content -->
+          <div class="p-6 md:p-12">
+            <h2
+              class="text-center font-serif text-xl font-medium text-white md:text-left"
+            >
+              Get diet and fitness tips in your inbox
+            </h2>
+            <p
+              class="my-4 max-w-xs text-center text-xs leading-5 tracking-wide text-white md:text-left"
+            >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit
+              qui ullam veniam alias voluptates officia?
+            </p>
+            <div
+              class="flex-flex-col mt-5 space-y-4 md:flex-row md:space-x-3 md:space-y-0"
+            >
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Enter you email address"
+                class="border border-zinc-600 bg-zinc-800 p-2 px-4 text-center text-white placeholder:text-center placeholder:text-xs focus:outline-none md:text-left placeholder:md:text-left"
+              />
+              <button
+                class="rounded-md bg-lime-500 px-5 py-3 text-xs text-zinc-800 duration-500 hover:bg-lime-700 hover:text-white"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
